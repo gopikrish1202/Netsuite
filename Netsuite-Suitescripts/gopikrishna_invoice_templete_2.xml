@@ -1,0 +1,151 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head>
+	<link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+	<#if .locale == "zh_CN">
+		<link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+	<#elseif .locale == "zh_TW">
+		<link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+	<#elseif .locale == "ja_JP">
+		<link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+	<#elseif .locale == "ko_KR">
+		<link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+	<#elseif .locale == "th_TH">
+		<link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+	</#if>
+    <macrolist>
+        <macro id="nlheader">
+
+        </macro>
+        <macro id="nlfooter">
+            <table style="width:70%"><tr>
+	<td style="width:100%;align:center;font-size: 9px"><b>This is Computer Generated Invoice</b></td>
+	</tr></table>
+        </macro>
+    </macrolist>
+    <style type="text/css">* {
+			<#if .locale == "zh_CN">
+				font-family: NotoSans, NotoSansCJKsc, sans-serif;
+			<#elseif .locale == "zh_TW">
+				font-family: NotoSans, NotoSansCJKtc, sans-serif;
+			<#elseif .locale == "ja_JP">
+				font-family: NotoSans, NotoSansCJKjp, sans-serif;
+			<#elseif .locale == "ko_KR">
+				font-family: NotoSans, NotoSansCJKkr, sans-serif;
+			<#elseif .locale == "th_TH">
+				font-family: NotoSans, NotoSansThai, sans-serif;
+			<#else>
+				font-family: NotoSans, sans-serif;
+			</#if>
+			}
+			table {
+				font-size: 6pt;
+				table-layout: fixed;
+                margin-bottom: 50px;
+                  border-spacing: 10px;
+                 
+                
+                 
+			}
+			th {
+				font-weight: bold;
+				font-size: 8pt;
+				vertical-align: middle;
+				padding: 5px 6px 3px;
+				background-color: #e3e3e3;
+				color: #333333;
+			}
+  /* .tb{
+    background-color: #add8e6;
+  } */
+			td {
+				padding: 4px 6px;
+			}
+			td p { align:left }
+			b {
+				font-weight: bold;
+				color: #333333;
+			}
+			table.header td {
+				padding: 0;
+				font-size: 10pt;
+			}
+			table.footer td {
+				padding: 0;
+				font-size: 8pt;
+			}
+			table.itemtable th {
+				padding-bottom: 10px;
+				padding-top: 10px;
+			}
+			table.body td {
+				padding-top: 2px;
+			}
+			table.total {
+				page-break-inside: avoid;
+			}
+			span.title {
+				font-size: 28pt;
+			}
+			span.tabletitle {
+				font-size: 16pt;
+			}
+			span.transactionheader {
+				font-size: 10pt;
+			}
+			span.number {
+				font-size: 16pt;
+			}
+  
+			hr {
+				width: 100%;
+				color: #d3d3d3;
+				background-color: #d3d3d3;
+				height: 1px;
+			}
+<body>
+           <table border="1px" style="text-align: right; color: blue; border-color: blue;"  width="100%">
+              <tr>
+                 <td style="font-size: 40px;" width="100%">
+                    DELIVERY CHALLAN
+                 </td>
+              </tr>
+              </table>
+              <table border="1px" style="color: blue; border-color: blue;"  width="100%">
+                <tr>
+                <td>
+
+                </td>
+                <td width="50%">
+                    Transportation Mode : ELECTRIC AUTO
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Challan No.  :
+                </td>
+                <td>
+                    Transporter Name : MR. SATHISH
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Challan Date : 13/06/2023
+                </td>
+                <td>
+                    Vehicle Number :
+                </td>
+            </tr>
+            <tr>
+                <td> State    : TN </td>
+                <td>Dispatch date : =today()</td>
+                
+            </tr>
+           </table>
+
+        </body>
+
+
+             </style>
+    </head>
+</pdf>

@@ -1,0 +1,67 @@
+ custrecord_netsuite_internalid1_,custrecord_coanum_bimpos_,custrecord_coanum_bimpos_desc_,custrecord_netsuite_coa_,custrecord_netsuite_desc_
+,801,'Cash Sales',1121024,Cash
+,831,'Inventory Food',1140001,Inventory Asset
+,832,'Inventory Beverages',1140001,Inventory Asset
+,833,'Inventory Retail',1140001,Inventory Asset
+,842,'Input VAT ',1160001,Input VAT
+,903,'Output VAT',2160001,Output VAT
+,910,'Sales-Food',4111000,Sales
+,911,'Sales-Beverage',4111000,Sales
+,912,'Sales-Retail',4111000,Sales
+,913,'Sales-Merchandise',4111000,Sales
+,916,'Customer Discount',4114001,Customer Discount
+,917,'Staff Discount',4114002,Staff Discount
+,939,COGS-Food',5111001,COGS-Food
+,940,COGS-Beverage',5111002,COGS-Beverage
+,941,COGS-Retails',5111003,COGS-Retails
+,942,COGS-Merchandise',5111004,COGS-Merchandise
+,946,'Credit card charges',6316003,Credit card charges
+,948,'Cleaning supplies',6316004,Cleaning supplies
+,950,'Kitchen utensils Expense',5110010,Kitchen utensils Expense
+,1112,'Zomato Dine In',1121013,Zomato Dine In
+,1113,'Talabat',1121014,Talabat
+,1114,'Careem Now',1121015,Careem Now
+,1123,'Deliveroo',1121016,Deliveroo
+,1124,'Eat Easily',1121017,Eat Easily
+,1125,'Filli Online',1121018,Filli Online
+,1126,Instashop Cash',1121027,Instashop Cash
+,1127,'Instashop Credit',1121019,Instashop Credit
+,1128,FiLLi App',1121025,FiLLi App
+,1129,'Noon Food',1121020,Noon Food
+,1615,'SHOROOQ',1121006,Shorooq
+,1674,'USD',1121024,Cash
+,1130,'Zomato Cash',1121024,Cash
+,1111,Zomato Credit',1121030,Zomato Credit
+,1149,'Inventory Consumables',1140001,Inventory Asset
+,1150,'Inventory Packaging',1140001,Inventory Asset
+,1151,'Inventory Uniforms',1140001,Inventory Asset
+,1155,'VARIANCES Debit',4111000,Sales
+,1160,'Card Sales',1121001,Credit Card
+,1161,'Event Sales',1121002,Events
+,1226,'Operational Discount',4114003,Operational Discount
+,1227,'Sales-Other Services',4111000,Sales
+,1233,'Inventory Stock In',1140001,Inventory Asset
+,1234,'COGS-Stock Loss',5111000,Cost of Goods Sold
+,1235,COGS-Consumables',5111008,Cost of Goods Sold
+,1236,COGS-Packaging',5111009,Cost of Goods Sold
+,1237,COGS-Uniform',5111010,Cost of Goods Sold
+,1250,Oman',1123002,Oman Franchise Receivable
+,1251,'Sales-Packaging',4111000,Sales
+,1270,TEXAS',1123001,Texas Franchise Receivables
+,1271,UK',1123003,UK Franchise Receivable
+,1275,'Credit Sales',4111000,Sales
+,1312,'Other payables',2123000,Other Payable
+,1393,'Purchase Clearing Account Credit',5111000,Cost of Goods Sold
+,1394,'Purchase Clearing Account Debit',5111000,Cost of Goods Sold
+,1436,'YouGotaGift',1121022,YouGotaGift
+,1441,'Unicare',1121005,Unicare
+,1442,'Gift Voucher redemptions',6410010,Gift Voucher redemptions
+,1453,NEPAL',1123004,Nepal Franchise Receivables
+,1457,'SWITZ UAE LLC',WONT COME IN FUTURE ITS SUPPLIER,WONT COME IN FUTURE ITS SUPPLIER
+,1463,MAURITIUS',1123005,Muaritius Franchise Receivables
+,1475,Cofe App',1121010,Cofe App
+,1564,Tamil Nadu',1123006,Tamil NaduFranchise Receivables
+,1588,Alpha Flight Services UAE LLC',1123007,Alpha Flight Services UAE LLC Franchise Receivables
+,1628,'Variance Credit',4111000,Sales
+,1667,Talabat Dine In',1121011,Talabat Dine In
+,1668,Asian Cricket Club',1121012,Asian Cricket Club

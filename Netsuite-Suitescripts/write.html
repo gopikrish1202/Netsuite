@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      try {
+        // Define the favorites array
+        var fav = [];
+        for (var i = 0; i < 3; i++) {
+          var favorite = prompt("Enter your favorite item:");
+          fav.push(favorite);
+        }
+
+        // Ask the user if they are a student and store the result
+        var isStudent = confirm("Are you a student?");
+        var studentStatus = isStudent ? "Yes" : "No";
+        
+        // Define the data to be stored in JSON format
+        var dataToStore = {
+          name: prompt("Enter name"),
+          age: prompt("Enter age"),
+          isStudent: studentStatus,
+          favorites: fav,
+          address: {
+            city: prompt("Enter city"),
+            postalCode: prompt("Enter postal code")
+          },
+          nullValue: null
+        };
+    
+        // Convert JavaScript object to JSON string
+        var jsonString = JSON.stringify(dataToStore, null, 2);
+    
+        // Display the JSON string
+        document.write("Encoded to JSON:<br><pre>" + jsonString + "</pre><br>");
+    
+        // Parse the JSON string back to a JavaScript object
+        var normal = JSON.parse(jsonString);
+    
+        // Display the parsed object
+        document.write("Decoded to Normal object:<br><pre>" + JSON.stringify(normal, null, 2) + "</pre>");
+      } catch (e) {
+        console.error('Error writing file', e);
+      }
+    </script>
+  </body>  
+</html>

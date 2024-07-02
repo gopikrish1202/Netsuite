@@ -1,0 +1,67 @@
+custrecord_netsuite_internalid2_,custrecord_coanum_bimpos2_,custrecord_coanum_bimpos_desc2_,custrecord_netsuite_customer_code_,custrecord_netsuite_customer_name_
+,801,'Cash Sales',Cus9,Cash
+,831,'Inventory Food',,
+,832,'Inventory Beverages',,
+,833,'Inventory Retail',,
+,842,'Input VAT ',,
+,903,'Output VAT',,
+,910,'Sales-Food',,
+,911,'Sales-Beverage',,
+,912,'Sales-Retail',,
+,913,'Sales-Merchandise',,
+,916,'Customer Discount',,
+,917,'Staff Discount',,
+,939,COGS-Food',,
+,940,COGS-Beverage',,
+,941,COGS-Retails',,
+,942,COGS-Merchandise',,
+,946,'Credit card charges',,
+,948,'Cleaning supplies',,
+,950,'Kitchen utensils Expense',,
+,1112,'Zomato Dine In',Cus20,ZOMATO DINE IN
+,1113,'Talabat',Cus21,TALABAT
+,1114,'Careem Now',Cus23,CAREEM NOW
+,1123,'Deliveroo',Cus24,DELIVEROO
+,1124,'Eat Easily',Cus28,EAT EASILY
+,1125,'Filli Online',Cus22,FILLI ONLINE
+,1126,Instashop Cash',Cus26,INSTASHOP CASH
+,1127,'Instashop Credit',Cus27,INSTASHOP CREDT
+,1128,FiLLi App',Cus132,FILLI APP
+,1129,'Noon Food',Cus29,NOON FOOD
+,1615,'SHOROOQ',Cus36,SHOROOQ
+,1674,'USD',Cus9,Cash
+,1130,'Zomato Cash',Cus9,Cash
+,1111,Zomato Credit',Cus19,ZOMATO CREDIT
+,1149,'Inventory Consumables',,
+,1150,'Inventory Packaging',,
+,1151,'Inventory Uniforms',,
+,1155,'VARIANCES Debit',,
+,1160,'Card Sales',Cus99,Visa
+,1161,'Event Sales',Cus30,EVENTS
+,1226,'Operational Discount',,
+,1227,'Sales-Other Services',,
+,1233,'Inventory Stock In',,
+,1234,'COGS-Stock Loss',,
+,1235,COGS-Consumables',,
+,1236,COGS-Packaging',,
+,1237,COGS-Uniform',,
+,1250,Oman',Cus3,OMAN FRANCHISE
+,1251,'Sales-Packaging',,
+,1270,TEXAS',Cus4,TEXAS FRANCHISE
+,1271,UK',Cus5,UK FRANCHISE
+,1275,'Credit Sales',,
+,1312,'Other payables',,
+,1393,'Purchase Clearing Account Credit',,
+,1394,'Purchase Clearing Account Debit',,
+,1436,'YouGotaGift',Cus32,YOUGOTAGIFT
+,1441,'Unicare',Cus33,UNICARE
+,1442,'Gift Voucher redemptions',,
+,1453,NEPAL',Cus1,NEPAL FRANCHISE
+,1457,'SWITZ UAE LLC',,
+,1463,MAURITIUS',Cus2,MAURITIUS FRANCHISE
+,1475,Cofe App',Cus34,COFE
+,1564,Tamil Nadu',Cus102,TAMILNADU FRANCHISE
+,1588,Alpha Flight Services UAE LLC',Cus113,ALPHA FLIGHT SERVICES UAE LLC
+,1628,'Variance Credit',,
+,1667,Talabat Dine In',Cus112,Talabat Dine IN
+,1668,Asian Cricket Club',Cus129,Asian Cricket Club
