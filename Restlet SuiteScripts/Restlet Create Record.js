@@ -10,6 +10,7 @@ define(['N/record', 'N/log'], function(record, log) {
     */
     function post(requestBody) {
         log.debug('Post triggered', JSON.stringify(requestBody));
+        //since http response is only returned as json format, converting output string as json format
 
         try {
             var objRecord = record.create({
