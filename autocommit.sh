@@ -9,7 +9,7 @@ if [ -n "$(git status --porcelain)" ]; then
     git add .
 
     # Commit the changes with a message
-    git commit -m "Auto-commit: $(date)"
+    git commit -m "Auto-commit: $(date)" --allow-empty-message
 
     # Push the changes to the remote repository
     git push origin main
