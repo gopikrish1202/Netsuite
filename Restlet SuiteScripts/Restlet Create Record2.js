@@ -38,7 +38,7 @@ define(['N/record', 'N/log'], function(record, log) {
                   });
               }
           }
-      }
+        }
 
       var savedId = objRecord.save();
       return {
