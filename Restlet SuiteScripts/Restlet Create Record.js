@@ -47,7 +47,7 @@ define(['N/record', 'N/log'], function(record, log) {
             var id = objRecord.save();
             log.debug('Record saved', id);
 
-            return JSON.stringify({id: id, message: "created successfully"});
+            return JSON.stringify({id: id, message: "created successfully"})
         } catch (e) {
             log.error({
                 title: 'Error creating record',
