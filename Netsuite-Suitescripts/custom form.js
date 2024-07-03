@@ -257,6 +257,7 @@ define(['N/ui/serverWidget'], function(serverWidget) {
                 label: 'Last Name',
                 container: 'usergroup'
             });
+            
             lname.isMandatory = true;
 
             form.addField({
