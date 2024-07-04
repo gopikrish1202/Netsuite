@@ -1,7 +1,10 @@
 #!/bin/bash
 
+echo "Script execution started"
+
 # Navigate to the repository directory
 cd /c/Users/admin/Netsuite
+echo "Navigated to /c/Users/admin/Netsuite"
 
 # Check if the navigation was successful
 if [ $? -ne 0 ]; then
@@ -15,10 +18,12 @@ if [ -n "$(git status --porcelain)" ]; then
 
     # Add all changes to the staging area
     git add .
+    echo "Files staged"
 
     # Commit the changes with a message
     COMMIT_MSG="Auto-commit: $(date)"
     git commit -m "$COMMIT_MSG"
+    echo "Commit command executed"
 
     # Check if the commit was successful
     if [ $? -eq 0 ]; then
