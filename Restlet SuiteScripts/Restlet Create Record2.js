@@ -78,7 +78,6 @@ define(['N/record'], function(record) {
                 var sublist = sublistData[j];
                 var sublistId = sublist.sublistId;
                 var sublistItems = sublist.sublistItems;
-
                 // Add sublist items
                 for (var k = 0; k < sublistItems.length; k++) {
                     var sublistItem = sublistItems[k];
