@@ -51,6 +51,7 @@
 //         post: post
 //     };
 //   });
+
 /**
  * @NApiVersion 2.x
  * @NScriptType Restlet
@@ -110,3 +111,26 @@ define(['N/record'], function(record) {
         post: post
     };
 });
+
+
+
+
+//JSON input
+
+/** 
+{
+    "recordType": "purchaseorder",
+    "mainLineFields": [
+      {"fieldId": "tranid", "value": "PO123"},
+      {"fieldId": "entity", "value": "38"}
+    ],
+    "sublistData": [
+      {
+        "sublistId": "item",
+        "sublistItems": [
+          {"item": "1358", "quantity": "2"}
+        ]
+      }
+    ]
+  }
+*/
