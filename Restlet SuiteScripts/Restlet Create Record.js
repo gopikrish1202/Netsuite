@@ -59,5 +59,5 @@ define(['N/record', 'N/log'], function(record, log) {
 
     return {
         post: post
-    };
+    }
 });
