@@ -17,7 +17,7 @@ if [ -n "$(git status --porcelain)" ]; then
     git add .
 
     # Commit the changes with a message
-    COMMIT_MSG="Auto-commit: $(date)" --allow-empty-message
+    COMMIT_MSG="Auto-commit: $(date)"
     git commit -m "$COMMIT_MSG"
 
     # Check if the commit was successful
