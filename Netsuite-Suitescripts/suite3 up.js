@@ -45,10 +45,12 @@ define(['N/record', 'N/render', 'N/log'], function(record, render, log) {
       var vatNo = loadPO.getText({
           fieldId: 'custbody_vat'
       });
+      
       log.debug('VAT No.', vatNo);
       var pinNo = loadPO.getText({
           fieldId: 'custbody10038'
       });
+
       log.debug('PIN No.', pinNo);
       var billAddress = loadPO.getText({
           fieldId: 'billaddress'
