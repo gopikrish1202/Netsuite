@@ -1,4 +1,3 @@
-
 /**
  * @NApiVersion 2.x
  * @NScriptType Restlet

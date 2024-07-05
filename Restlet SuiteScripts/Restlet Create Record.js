@@ -28,12 +28,12 @@ define(['N/record', 'N/log'], function(record, log) {
             objRecord.setValue({
                 fieldId: 'subsidiary',
                 value: subsidiary
-            });
+            })
 
             var comments=requestBody.comments;
             objRecord.setValue({
                 fieldId: 'comments',
-                value: comments
+                value: 
             })
 
             var creditlimit=requestBody.creditlimit;
@@ -59,5 +59,5 @@ define(['N/record', 'N/log'], function(record, log) {
 
     return {
         post: post
-    };
+    }
 });
