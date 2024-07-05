@@ -21,8 +21,6 @@ poRecord.setValue({
     value: 1
 });
 
-
-
 var linecnt = poRecord.getLineCount({ sublistId: 'item'})
 for( var line = 0;line< linecnt; line++){
     // var item = getSublistValue({sublistId:'item',fieldId:'item',line:i})
