@@ -23,4 +23,4 @@ fs.writeFile('data.json', jsonStr, 'utf8', (err) => {
         return;
     }
     console.log('Data encoded and saved to data.json');
-});
+})
