@@ -42,10 +42,10 @@ define(['N/record', 'N/render', 'N/log'], function(record, render, log) {
       });
       log.debug('Payment Terms', paymentTerms);
 
-      var vatNo = loadPO.getText({
+      var vatNo = loadPO.getText(
           fieldId: 'custbody_vat'
       });
-      
+
       log.debug('VAT No.', vatNo);
       var pinNo = loadPO.getText({
           fieldId: 'custbody10038'
