@@ -31,7 +31,7 @@ for( var line = 0;line< linecnt; line++){
     // });
     
     
-        poRecord.setSublistValue({sublistId:'item' ,fieldId: 'item',  '4709',line:line});
+        poRecord.setSublistValue({sublistId:'item' ,fieldId: 'item', 'item' : '4709',line:line});
     
 }
 
