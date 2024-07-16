@@ -53,7 +53,7 @@ DIRS=(
 )
 
 # Remote URL for the repository
-REPO_URL="https://github.com/gopikrish1202/Netsuite-Suitescripts.git"
+REPO_URL="https://github.com/gopikrish1202/Netsuite.git"
 
 # Iterate over directories and process each one
 for DIR in "${DIRS[@]}"; do
