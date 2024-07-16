@@ -39,8 +39,8 @@ commit_and_push() {
     fi
 }
 
-# Function to commit and push twice
-double_commit_and_push() {
+# Function to commit and push twice with a middle check
+double_commit_and_push_with_middle_check() {
     local DIR=$1
     local REMOTE_URL=$2
 
@@ -53,13 +53,23 @@ double_commit_and_push() {
     # First commit and push
     commit_and_push "$DIR"
 
-    # Check if there are any changes again
-    if [ -n "$(git status --porcelain)" ]; then
-        echo "Changes detected after first push in ${DIR}. Performing second commit and push..."
+    # Middle check for any staged changes
+    if [ -n "$(git diff --cached --name-only)" ]; then
+        echo "Staged changes detected after first push in ${DIR}. Pushing staged changes..."
 
-        # Second commit and push
-        commit_and_push "$DIR"
+        # Push the staged changes
+        git push origin main
+
+        # Check if the push was successful
+        if [ $? -eq 0 ]; then
+            echo "Push successful for staged changes in ${DIR}."
+        else
+            echo "Failed to push staged changes to remote repository for ${DIR}."
+        fi
     fi
+
+    # Second commit and push
+    commit_and_push "$DIR"
 }
 
 echo "Script execution started"
@@ -88,8 +98,8 @@ for i in "${!DIRS[@]}"; do
         exit 1
     fi
 
-    # Perform double commit and push
-    double_commit_and_push "$DIR" "$REMOTE_URL"
+    # Perform double commit and push with a middle check
+    double_commit_and_push_with_middle_check "$DIR" "$REMOTE_URL"
 done
 
 echo "Script execution finished"
