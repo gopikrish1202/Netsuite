@@ -76,8 +76,8 @@ echo "Script execution started"
 
 # Directory paths
 DIRS=(
-    "/c/Users/admin/Netsuite/Netsuite-Suitescripts"
-    "/c/Users/admin/Netsuite/Restlet-Suitescripts"
+    "/c/Users/admin/Netsuite/Netsuite"
+   
 )
 
 # Remote URLs for the repositories
