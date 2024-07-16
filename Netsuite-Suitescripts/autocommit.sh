@@ -3,7 +3,7 @@
 # Function to handle Git operations
 commit_and_push() {
     local DIR=$1
-    local REMOTE_URL=$2
+    local REPO_URL=$2
 
     echo "Navigated to ${DIR}"
 
@@ -15,18 +15,30 @@ commit_and_push() {
         echo "Changes detected in ${DIR}. Staging files..."
 
         # Add all changes to the staging area
-        git add . || { echo "Failed to stage files in ${DIR}"; exit 1; }
+        git add .
         echo "Files staged in ${DIR}"
 
         # Commit the changes with a message
         COMMIT_MSG="Auto-commit: $(date)"
-        git commit -m "$COMMIT_MSG" || { echo "Commit failed in ${DIR}"; exit 1; }
-        echo "Commit successful in ${DIR}"
+        git commit -m "$COMMIT_MSG"
+        echo "Commit command executed in ${DIR}"
 
-        # Push the changes to the remote repository
-        echo "Pushing to remote repository..."
-        git push "$REMOTE_URL" main || { echo "Failed to push changes to remote repository for ${DIR}"; exit 1; }
-        echo "Push successful for ${DIR}."
+        # Check if the commit was successful
+        if [ $? -eq 0 ]; then
+            echo "Commit successful in ${DIR}. Pushing to remote repository..."
+
+            # Push the changes to the remote repository
+            git push "$REPO_URL" main
+
+            # Check if the push was successful
+            if [ $? -eq 0 ]; then
+                echo "Push successful for ${DIR}."
+            else
+                echo "Failed to push changes to remote repository for ${DIR}."
+            fi
+        else
+            echo "Commit failed in ${DIR}."
+        fi
     else
         echo "No changes to commit in ${DIR}."
     fi
@@ -40,19 +52,12 @@ DIRS=(
     "/c/Users/admin/Netsuite/Restlet-Suitescripts"
 )
 
-# Remote URLs for the repositories
-REMOTE_URLS=(
-    "https://github.com/gopikrish1202/Netsuite/Netsuite-Suitescripts.git"
-    "https://github.com/gopikrish1202/Netsuite/Restlet-Suitescripts.git"
-)
+# Remote URL for the repository
+REPO_URL="https://github.com/gopikrish1202/Netsuite-Suitescripts.git"
 
 # Iterate over directories and process each one
-for i in "${!DIRS[@]}"; do
-    DIR=${DIRS[$i]}
-    REMOTE_URL=${REMOTE_URLS[$i]}
-
-    # Perform Git operations
-    commit_and_push "$DIR" "$REMOTE_URL"
+for DIR in "${DIRS[@]}"; do
+    commit_and_push "$DIR" "$REPO_URL"
 done
 
 echo "Script execution finished"
