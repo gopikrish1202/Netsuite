@@ -33,7 +33,7 @@ define(['N/record', 'N/log'], function(record, log) {
             var comments=requestBody.comments;
             objRecord.setValue({
                 fieldId: 'comments',
-                value: 
+                value: comments
             })
 
             var creditlimit=requestBody.creditlimit;

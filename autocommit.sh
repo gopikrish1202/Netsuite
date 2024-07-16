@@ -12,6 +12,16 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# Pull the latest changes from the remote repository
+echo "Pulling the latest changes from remote..."
+git pull origin main
+
+# Check if the pull was successful
+if [ $? -ne 0 ]; then
+    echo "Failed to pull changes from remote repository"
+    exit 1
+fi
+
 # Check if there are any changes
 if [ -n "$(git status --porcelain)" ]; then
     echo "Changes detected. Staging files..."
